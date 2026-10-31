@@ -20,7 +20,7 @@ from xsmb.transform import filter_region, to_dataframe
 BQ_TABLE = f"{PROJECT}.{DATASET}.xsmb_results"
 
 with DAG(
-    dag_id="7_etl_data_xsmb",
+    dag_id="9_etl_data_xsmb",
     start_date=datetime(2026, 10, 1),
     schedule="15 9 * * *",
     catchup=False,
